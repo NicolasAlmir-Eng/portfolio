@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 40, "column": 0}, "map": {"version":3,"sources":["file:///home/nicolas-almir/%C3%81rea%20de%20trabalho/portfolio/src/pages/_document.js"],"sourcesContent":["import { Html, Head, Main, NextScript } from 'next/document'\n\nexport default function Document() {\n  return (\n    <Html lang=\"pt-BR\">\n      <Head>\n        <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\" />\n        <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossOrigin=\"anonymous\" />\n        <link href=\"https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap\" rel=\"stylesheet\" />\n        <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css\" />\n      </Head>\n      <body>\n        <Main />\n        <NextScript />\n      </body>\n    </Html>\n  )\n}"],"names":["Document","lang","rel","href","crossOrigin"],"mappings":";;;;;AAAA;;;AAEe,SAASA;IACtB,qBACE,qKAAC,iIAAI;QAACC,MAAK;;0BACT,qKAAC,iIAAI;;kCACH,qKAAC;wBAAKC,KAAI;wBAAaC,MAAK;;;;;;kCAC5B,qKAAC;wBAAKD,KAAI;wBAAaC,MAAK;wBAA4BC,aAAY;;;;;;kCACpE,qKAAC;wBAAKD,MAAK;wBAA2FD,KAAI;;;;;;kCAC1G,qKAAC;wBAAKA,KAAI;wBAAaC,MAAK;;;;;;;;;;;;0BAE9B,qKAAC;;kCACC,qKAAC,iIAAI;;;;;kCACL,qKAAC,uIAAU;;;;;;;;;;;;;;;;;AAInB"}}]
-}
