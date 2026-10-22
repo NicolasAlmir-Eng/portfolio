@@ -1,0 +1,135 @@
+:root {
+  --primary-color: #00ff41;
+  --primary-glow: rgba(0, 255, 65, 0.4);
+  --secondary-color: #008f11;
+  --background-dark: #050505;
+  --surface-dark: rgba(15, 15, 15, 0.7);
+  --surface-border: rgba(0, 255, 65, 0.15);
+  --text-primary: #e0e0e0;
+  --text-secondary: #888888;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fira Code', monospace;
+}
+
+body {
+  background-color: var(--background-dark);
+  color: var(--text-primary);
+  background-image: 
+    radial-gradient(circle at 15% 50%, rgba(0, 255, 65, 0.05), transparent 25%),
+    radial-gradient(circle at 85% 30%, rgba(0, 255, 65, 0.05), transparent 25%);
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Efeito de Vidro (Glassmorphism) */
+.glass-panel {
+  background: var(--surface-dark);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--surface-border);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  transition: all 0.3s ease;
+}
+
+.glass-panel:hover {
+  border-color: var(--primary-glow);
+  box-shadow: 0 0 20px var(--primary-glow);
+  transform: translateY(-5px);
+}
+
+/* Textos com Neon */
+.neon-text {
+  color: var(--primary-color);
+  text-shadow: 0 0 10px var(--primary-glow);
+}
+
+/* Botoes Premium */
+.btn-tech {
+  display: inline-block;
+  padding: 12px 24px;
+  background: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-tech:hover {
+  background: var(--primary-color);
+  color: var(--background-dark);
+  box-shadow: 0 0 15px var(--primary-glow);
+}
+
+/* Utilitarios */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main-content {
+  min-height: 80vh;
+  padding-top: 100px;
+  padding-bottom: 4rem;
+}
+
+/* Efeito de digitacao */
+.typing-cursor {
+  border-right: 2px solid var(--primary-color);
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: var(--primary-color); }
+}
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: var(--background-dark); border-left: 1px solid var(--surface-border); }
+::-webkit-scrollbar-thumb { background: var(--secondary-color); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--primary-color); box-shadow: 0 0 10px var(--primary-glow); }
+
+/* =========================================
+   MODO CLARO (Light Theme)
+   ========================================= */
+[data-theme="light"] {
+  --primary-color: #007a11; /* Verde mais escuro para garantir leitura no claro */
+  --primary-glow: rgba(0, 122, 17, 0.2);
+  --secondary-color: #00590c;
+  --background-dark: #f0f4f8; /* Fundo cinza/azulado bem claro */
+  --surface-dark: rgba(255, 255, 255, 0.85); /* Efeito de vidro branco */
+  --surface-border: rgba(0, 122, 17, 0.2);
+  --text-primary: #121212; /* Texto escuro */
+  --text-secondary: #444444; /* Cinza médio */
+}
+
+/* Transições suaves ao trocar de tema */
+body, .glass-panel, header, footer, a, span, p, h1, h2, h3, div {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Classes para controlar a visibilidade do botão no celular e PC */
+.nav-desktop { display: flex; gap: 2rem; align-items: center; }
+.nav-mobile-btn { display: none; align-items: center; gap: 1rem; }
+
+@media (max-width: 768px) {
+  .nav-desktop { display: none !important; }
+  .nav-mobile-btn { display: flex !important; }
+}

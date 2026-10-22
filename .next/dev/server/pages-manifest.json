@@ -1,0 +1,18 @@
+{
+  "/": "pages/index.js",
+  "/404": "pages/404.js",
+  "/_app": "pages/_app.js",
+  "/_document": "pages/_document.js",
+  "/admin/blog": "pages/admin/blog.js",
+  "/admin/dashboard": "pages/admin/dashboard.js",
+  "/admin/estudos": "pages/admin/estudos.js",
+  "/admin/gerenciar_certificados": "pages/admin/gerenciar_certificados.js",
+  "/admin/habilidades": "pages/admin/habilidades.js",
+  "/admin/interesses": "pages/admin/interesses.js",
+  "/admin/projetos": "pages/admin/projetos.js",
+  "/blog": "pages/blog.js",
+  "/certificados": "pages/certificados.js",
+  "/estudos": "pages/estudos.js",
+  "/habilidades": "pages/habilidades.js",
+  "/projetos": "pages/projetos.js"
+}

@@ -1,0 +1,3 @@
+(()=>{"use strict";module.exports=[6928,a=>a.a(async(b,c)=>{try{var d=await a.y("@supabase/supabase-js-13bdb2f0966edf07");a.n(d),c()}catch(a){c(a)}},!0),1589,a=>a.a(async(b,c)=>{try{var d=a.i(6928),e=b([d]);[d]=e.then?(await e)():e;let f=(0,d.createClient)("https://gufpkxrjqbreysguujkq.supabase.co","sb_publishable_analxve97-0WTjtJazXO4A_6nLJtMfm");a.s(["f",0,f]),c()}catch(a){c(a)}},!1)]})();
+
+//# sourceMappingURL=%5Broot-of-the-server%5D__05_sozwad9ak-._.js.map
